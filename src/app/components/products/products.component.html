@@ -3,7 +3,7 @@
 <button routerLink="/landing">Powrót</button>
 
 <div class="products">
-    <table style="margin:0 auto;">
+    <table style="margin:0 auto;" id="ProductsTable">
         <thead *ngIf="this.mainService.products">
             <tr>
                 <th>obrazek</th>
@@ -13,7 +13,7 @@
         </thead>
         <tbody>
           <ng-container *ngFor="let product of this.mainService.products?.productsTable">
-            <tr style="background-color: whitesmoke;">
+            <tr style="background-color: rgba(157, 178, 182, 0.801);">
               <td><img src="{{product.thumbnail}}" alt=""></td>
               <td>
               <ul>
@@ -23,7 +23,7 @@
               </ul>
               </td>
                 <td>
-                  <button>Do koszyka</button>
+                  <button (click)="addToCart(product)">Do koszyka</button>
                 </td>
               </tr>
             </ng-container>
