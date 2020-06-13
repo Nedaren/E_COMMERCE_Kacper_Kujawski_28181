@@ -1,9 +1,44 @@
+.products{
+  background-color: #707a81;
+}
+button {
+  display: inline-block;
+  border: none;
+  background-color: #535353;
+  color: whitesmoke;
+  font-family: 'Titillium Web', sans-serif;
+}
+
 #ProductsTable{
   img {
     max-width: 15%;
     max-width: 300px;
   }
+  th {
+    font-family: 'MuseoModerno', cursive;
+  }
   td {
     padding: 10px;
+    font-family: 'MuseoModerno', cursive;
+  }
+
+  button:hover {
+    background-color: #979797;
+  }
+
+  button:active {
+  background-color: #535353;
+  box-shadow: 0 5px rgb(189, 217, 221);
+  transform: translateY(4px);
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  th {
+    width: 33%;
+  }
+  img {
+    width: 100%;
   }
 }

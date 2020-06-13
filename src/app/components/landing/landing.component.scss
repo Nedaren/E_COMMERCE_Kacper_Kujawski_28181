@@ -1,0 +1,38 @@
+.container {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  font-family: 'MuseoModerno', cursive;
+}
+td {
+  text-align: center;
+  width: 44%;
+  height: 25%;
+  min-height: 20%;
+  background-color: darkgray;
+  margin: 2%;
+  float: left;
+}
+img {
+  display: block;
+  max-height: 40%;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .ad, .ad2 {
+    float: none;
+    width: 90%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}

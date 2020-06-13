@@ -1,19 +1,23 @@
 <app-panel-top></app-panel-top>
 
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+
 <button routerLink="/landing">Powrót</button>
 
 <div class="products">
     <table style="margin:0 auto;" id="ProductsTable">
         <thead *ngIf="this.mainService.products">
             <tr>
-                <th>obrazek</th>
-                <th>dane</th>
-                <th>akcje</th>
+                <th>Box-Art</th>
+                <th>Dane</th>
+                <th>Akcje</th>
             </tr>
         </thead>
         <tbody>
           <ng-container *ngFor="let product of this.mainService.products?.productsTable">
-            <tr style="background-color: rgba(157, 178, 182, 0.801);">
+            <tr style="background-color: #b4b4b4;">
               <td><img src="{{product.thumbnail}}" alt=""></td>
               <td>
               <ul>

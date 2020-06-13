@@ -1,7 +1,16 @@
 body {
-  background-color: #568b83c7;
+  background-color: #7d83aac7;
+  font-family: 'MuseoModerno', cursive;
+  margin: 0px;
 }
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'MuseoModerno', cursive;
 }
 
+button {
+  display: inline-block;
+  border: none;
+  background-color: #535353;
+  color: whitesmoke;
+  font-family: 'Titillium Web', sans-serif;
+}
